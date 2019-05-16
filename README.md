@@ -1,7 +1,7 @@
 # Starnavi technical task
 
 
-# Configuration Backend
+### Configuration Backend
 
 Environment variables
 
@@ -10,7 +10,7 @@ $ cd docker/django
 $ nano .env # See to table environment variables backend
 ```
 
-# Configuration Bot
+### Configuration Bot
 
 Environment variables
 
@@ -28,7 +28,7 @@ $ cd starnavi-bot
 $ nano config.ini # See to table config.ini
 ```
 
-Environment variables backend
+### Environment variables backend
 
 | Key    | Description   |    Default value  |
 | :---         |     :---      |          :--- |
@@ -45,7 +45,7 @@ Environment variables backend
 | `CLEARBIT_KEY`  | Clearbit key from https://dashboard.clearbit.com/api | |
 | `HUNTER_KEY`  | Hunter key from https://hunter.io/api_keys |  |
 
-Environment variables bot
+### Environment variables bot
 
 | Key    | Description   |    Default value  |
 | :---         |     :---      |          :--- |
@@ -53,7 +53,7 @@ Environment variables bot
 | `JWT_ALGORITHMS`  | JWT algorithms  | HS256              |
 
 
-Config.ini
+### Config.ini
 
 
 | Key    | Description   |    Default value  |
@@ -65,7 +65,7 @@ Config.ini
 | `max_likes_per_user`  | Max likes per user | 3 |
     
 
-# Run project
+### Run project
 
 ```.bash
 $ docker-compose up
