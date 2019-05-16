@@ -13,4 +13,4 @@ MAX_POSTS_PER_USER = int(config.get('BOT', 'max_posts_per_user'))
 MAX_LIKES_PER_USER = int(config.get('BOT', 'max_likes_per_user'))
 
 JWT_SECRET_KEY = env.get('JWT_SECRET_KEY')
-JWT_ALGORITHMS = env.get('JWT_ALGORITHMS')
+JWT_ALGORITHMS = env.get('JWT_ALGORITHMS', 'HS256')
