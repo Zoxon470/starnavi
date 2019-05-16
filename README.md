@@ -37,7 +37,7 @@ $ nano config.ini # See to table config.ini
 | `DEFAULT_DATABASE_URL`  | postgres://user:password@host:port/database_name | postgres://postgres:postgres@db:5432/starnavi |
 | `POSTGRES_USER`  | Postgres username |   postgres   |
 | `POSTGRES_PASSWORD`  | Postgres password |  postgres    |
-| `POSTGRES_DB`  | Postgres database name | starnavi |
+| `POSTGRES_DB`  | Postgres database name | postgres |
 | `PGDATA`  | Postgres volume | /var/lib/postgresql/data |
 | `REDIS_HOST`  | Redis host | redis |
 | `REDIS_PORT`  | Redis port | 6379 |

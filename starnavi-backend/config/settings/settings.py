@@ -70,7 +70,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         'DEFAULT_DATABASE_URL',
-        default='postgres://postgres:postgres@db:5432/starnavi')}
+        default='postgres://postgres:postgres@db:5432/postgres')}
 
 
 AUTH_PASSWORD_VALIDATORS = [
