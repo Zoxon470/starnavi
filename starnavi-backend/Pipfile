@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "==2.0.13"
+djangorestframework = "==3.9.2"
+djangorestframework-jwt = "==1.11.0"
+psycopg2-binary = "==2.7.6.1"
+django-environ = "==0.4.5"
+dj-database-url = "==0.5.0"
+clearbit = "==0.1.7"
+pyhunter = "==0.3"
+redis = "==3.2.0"
+django-rq = "==2.0"
+
+[requires]
+python_version = "3.7"
