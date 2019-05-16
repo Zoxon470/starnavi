@@ -49,7 +49,7 @@ $ nano config.ini # See to table config.ini
 
 | Key    | Description   |    Default value  |
 | :---         |     :---      |          :--- |
-| `JWT_SECRET_KEY`  | JWT secret key | mysecretkey              |
+| `JWT_SECRET_KEY`  | JWT secret key | secret-key              |
 | `JWT_ALGORITHMS`  | JWT algorithms  | HS256              |
 
 

@@ -29,6 +29,7 @@ def main():
             for post in range(randint(1, MAX_POSTS_PER_USER)):
                 post_id = bot.create_post(decoded_access_token['user_id'],
                                           access_token)
+                print(post_id)
                 if post_id:
                     for _ in range(randint(1, MAX_LIKES_PER_USER)):
                         bot.like_post(post_id, access_token)
