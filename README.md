@@ -68,5 +68,6 @@ $ nano config.ini # See to table config.ini
 ### Run project
 
 ```.bash
+$ cd docker
 $ docker-compose up
 ```
