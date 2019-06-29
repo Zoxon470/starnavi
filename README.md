@@ -1,5 +1,6 @@
-# Starnavi technical task
+# Starnavi
 
+Test assignment for starnavi.io
 
 ### Configuration Backend
 
