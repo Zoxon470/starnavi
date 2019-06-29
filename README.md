@@ -7,49 +7,49 @@ framework.
 Social Network
 
 Basic models:
-  ● User
-  ● Post (always made by a user)
+  * User
+  * Post (always made by a user)
 Basic features:
-  ● user signup
-  ● user login
-  ● post creation
-  ● post like
-  ● post unlike
+  * user signup
+  * user login
+  * post creation
+  * post like
+  * post unlike
 
 For User and Post objects, candidate is free to define attributes as they see fit.
 
 Requirements:
-  ● Token authentication (JWT is prefered)
-  ● use Django with any other Django batteries, databases etc.
+  * Token authentication (JWT is prefered)
+  * use Django with any other Django batteries, databases etc.
 Optional (will be a plus):
-  ● use clearbit.com/enrichment for getting additional data for the user on signup
-  ● use emailhunter.co for verifying email existence on signup
+  * use clearbit.com/enrichment for getting additional data for the user on signup
+  * use emailhunter.co for verifying email existence on signup
 
 Automated bot
 Object of this bot demonstrate functionalities of the system according to defined rules.
 This bot should read rules from a config file (in any format chosen by the candidate), but
 should have following fields (all integers, candidate can rename as they see fit):
-  ● number_of_users
-  ● max_posts_per_user
-  ● max_likes_per_user
+  * number_of_users
+  * max_posts_per_user
+  * max_likes_per_user
 Bot should read the configuration and create this activity:
-  ● signup users (number provided in config)
-  ● each user creates random number of posts with any content (up to
+  * signup users (number provided in config)
+  * each user creates random number of posts with any content (up to
 max_posts_per_user)
-  ● After creating the signup and posting activity, posts should be liked randomly, posts
+  * After creating the signup and posting activity, posts should be liked randomly, posts
 can be liked multiple times
 
 Notes
-  ● emailhunter and clearbit have either free pricing plans or free trial, the candidate can
+  * emailhunter and clearbit have either free pricing plans or free trial, the candidate can
 use their own account if he would like implement the functionality
-  ● visual aspect of the project is not important, the candidate can create a frontend for
+  * visual aspect of the project is not important, the candidate can create a frontend for
 viewing the result, but it is not necessary (will be a plus). Clean and usable REST
 API is important
-  ● the project is not defined in detail, the candidate should use their best judgment for
+  * the project is not defined in detail, the candidate should use their best judgment for
 every non-specified requirements (including chosen tech, third party apps, etc),
 however
-  ● every decision must be explained and backed by arguments in the interview
-  ● Result should be sent by providing a Git url. This is a mandatory requirement.
+  * every decision must be explained and backed by arguments in the interview
+  * Result should be sent by providing a Git url. This is a mandatory requirement.
 
 ### Configuration Backend
 
