@@ -35,6 +35,7 @@ class UserSignUpView(generics.CreateAPIView):
 class UserLoginView(views.APIView):
     """
     POST user/login/
+
     :param email
     :param password
     """
