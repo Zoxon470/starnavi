@@ -38,7 +38,9 @@ class PostLikeView(generics.GenericAPIView):
             if user not in post.likes.all():
                 post.likes.add(user)
                 return Response()
-            return Response({'message': 'User has already liked this post.'})
+            return Response(
+                {'message': 'User has already liked this post.'}
+            )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, *args, **kwargs):
@@ -49,6 +51,8 @@ class PostLikeView(generics.GenericAPIView):
             if user in post.likes.all():
                 post.likes.remove(user)
                 return Response()
-            return Response({'message': 'User did not like this post.'},
-                            status.HTTP_400_BAD_REQUEST)
+            return Response(
+                {'message': 'User did not like this post.'},
+                status.HTTP_400_BAD_REQUEST
+            )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

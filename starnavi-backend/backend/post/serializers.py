@@ -6,7 +6,9 @@ from .models import Post
 
 class PostCreateSerializer(serializers.ModelSerializer):
     user_id = serializers.PrimaryKeyRelatedField(
-        source='user', queryset=User.objects.all())
+        source='user',
+        queryset=User.objects.all()
+    )
     title = serializers.CharField()
     description = serializers.CharField()
 
