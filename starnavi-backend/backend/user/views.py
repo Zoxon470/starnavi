@@ -28,8 +28,10 @@ class UserSignUpView(generics.CreateAPIView):
             django_rq.enqueue(find_enrichment, user)
             token = jwt_encode_handler(jwt_payload_handler(user))
             return Response({'token': token}, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors,
-                        status=status.HTTP_400_BAD_REQUEST)
+        return Response(
+            serializer.errors,
+            status=status.HTTP_400_BAD_REQUEST
+        )
 
 
 class UserLoginView(views.APIView):
@@ -50,6 +52,8 @@ class UserLoginView(views.APIView):
                 login(request, user)
                 token = jwt_encode_handler(jwt_payload_handler(user))
                 return Response({'token': token})
-            return Response({'error': 'User is not authorized.'},
-                            status=status.HTTP_401_UNAUTHORIZED)
+            return Response(
+                {'error': 'User is not authorized.'},
+                status=status.HTTP_401_UNAUTHORIZED
+            )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

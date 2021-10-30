@@ -32,10 +32,14 @@ class User(AbstractBaseUser):
 
     email = models.EmailField(_('email'), unique=True, db_index=True)
     verified_email = models.BooleanField(default=False)
-    first_name = models.CharField(_('first name'), max_length=30,
-                                  blank=True, null=True)
-    last_name = models.CharField(_('last name'), max_length=150, blank=True,
-                                 null=True)
+    first_name = models.CharField(
+        _('first name'), max_length=30,
+        blank=True, null=True
+    )
+    last_name = models.CharField(
+        _('last name'), max_length=150, blank=True,
+        null=True
+    )
     is_staff = models.BooleanField(_('regular user'), default=False)
     is_active = models.BooleanField(
         _('active'),
