@@ -31,6 +31,11 @@ class PostLikeView(generics.GenericAPIView):
     serializer_class = PostLikeSerializer
 
     def post(self, request, *args, **kwargs):
+        """
+        Create new post /post/create
+
+        :return: message
+        """
         serializer = self.serializer_class(data=self.kwargs)
         if serializer.is_valid(raise_exception=True):
             user = request.user
@@ -44,6 +49,11 @@ class PostLikeView(generics.GenericAPIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, *args, **kwargs):
+        """
+        Delete post /post/delete
+
+        :return: message
+        """
         serializer = self.serializer_class(data=self.kwargs)
         if serializer.is_valid(raise_exception=True):
             user = request.user
